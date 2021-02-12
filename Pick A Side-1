@@ -1,0 +1,15 @@
+--_G.run = false to turn off
+_G.run = true
+while _G.run do
+for i,v in pairs(game.Players:GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then 
+if workspace:FindFirstChild(v.Name) then
+if v.Character:findFirstChild("Head") then
+v.Character.Head.Anchored = true 
+v.Character.Head.CFrame = game.Players.LocalPlayer.Character.Head.CFrame*CFrame.new(0,0,-1)
+end
+end
+end 
+end
+wait() 
+end
