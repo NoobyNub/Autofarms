@@ -1,0 +1,5 @@
+local part = Instance.new("Part")
+part.Parent = workspace
+part.Size = Vector3.new(25, 1, 25)
+part.CFrame = CFrame.new(51, -6, -6.8)
+part.Anchored = true
